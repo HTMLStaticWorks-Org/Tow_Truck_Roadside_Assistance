@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#070B14" />
+    </linearGradient>
+
+    <linearGradient id="tow-accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9420A" />
+      <stop offset="50%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+
+    <linearGradient id="beacon-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="55%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container Squircle -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg-grad)" stroke="#EA580C" stroke-width="8" stroke-opacity="0.45" />
+
+  <!-- Ambient Amber Beacon Halo -->
+  <circle cx="256" cy="210" r="145" fill="#F59E0B" opacity="0.14" filter="url(#glow)" />
+
+  <!-- Outer Shield Emblem -->
+  <path d="M 256 88 L 386 138 V 248 C 386 332 328 396 256 426 C 184 396 126 332 126 248 V 138 Z"
+        fill="#111A2E" stroke="url(#tow-accent)" stroke-width="14" stroke-linejoin="round" />
+
+  <!-- Beacon Light Rays -->
+  <path d="M 256 122 V 146 M 204 140 L 218 158 M 308 140 L 294 158"
+        stroke="#FBBF24" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Tow Truck / Flatbed Silhouette -->
+  <g fill="url(#tow-accent)">
+    <!-- Flatbed & Cab -->
+    <path d="M 164 268 H 284 V 214 H 322 L 352 246 V 286 H 164 Z" />
+    <!-- Tilted Recovery Ramp / Boom -->
+    <path d="M 164 252 L 266 190 L 278 208 L 176 268 Z" fill="url(#beacon-glow)" />
+    <!-- Cab Window -->
+    <path d="M 294 224 H 316 L 336 246 H 294 Z" fill="#0F172A" />
+    <!-- Roof Beacon -->
+    <rect x="288" y="196" width="28" height="14" rx="7" fill="#FBBF24" />
+  </g>
+
+  <!-- Wheels -->
+  <circle cx="204" cy="294" r="24" fill="#0F172A" stroke="#FBBF24" stroke-width="8" />
+  <circle cx="204" cy="294" r="7" fill="#FBBF24" />
+  <circle cx="318" cy="294" r="24" fill="#0F172A" stroke="#FBBF24" stroke-width="8" />
+  <circle cx="318" cy="294" r="7" fill="#FBBF24" />
+
+  <!-- Highway Speed Line -->
+  <path d="M 152 342 H 360" stroke="url(#tow-accent)" stroke-width="10" stroke-linecap="round" opacity="0.7" />
+</svg>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <title>TowGuard | Towing &amp; Roadside Services</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+  <!-- Drawer overlay & Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-truck"></i>TowGuard</div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link">Home 2</a>
+      <a href="coverage.html" class="drawer-link">Coverage</a>
+      <a href="services.html" class="drawer-link active">Services</a>
+      <a href="operators.html" class="drawer-link">Operators</a>
+      <a href="guides.html" class="drawer-link">Guides</a>
+      <a href="support.html" class="drawer-link">Support</a>
+      <a href="dispatch.html" class="drawer-link">Dispatch</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-truck"></i>TowGuard
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="operators.html" class="nav-link">Operators</a>
+        <a href="guides.html" class="nav-link">Guides</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="dispatch.html" class="nav-link">Dispatch</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero"
+      style="min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="hero-shapes"></div>
+      <div class="container">
+        <span class="eyebrow animate-on-scroll"><i class="ph-fill ph-wrench"></i> 24/7 Fleet Capabilities</span>
+        <h1 class="animate-on-scroll">TowGuard <span class="gradient-text">Roadside Services</span></h1>
+        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto var(--space-4); max-width: 600px;">Complete
+          emergency towing, on-site mechanical rescue, and heavy-duty recovery built for speed and zero-damage safety.</p>
+        <div class="hero-actions animate-on-scroll delay-2" style="justify-content: center;">
+          <a href="request.html" class="btn btn-primary btn-lg">Request Help Now <i class="ph ph-arrow-right btn-arrow"></i></a>
+          <a href="#journey" class="btn btn-outline btn-lg"><i class="ph ph-compass"></i> Explore service tiers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- At-a-glance strip -->
+    <section class="band-plain band-tight">
+      <div class="container">
+        <div class="journey-glance animate-on-scroll">
+          <div><strong>24/7</strong><span>live emergency dispatch</span></div>
+          <div><strong>22m</strong><span>average metro ETA</span></div>
+          <div><strong>140+</strong><span>equipped recovery trucks</span></div>
+          <div><strong>99.4%</strong><span>damage-free haul score</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3-tier service breakdown (timeline) -->
+    <section class="section" id="journey" style="scroll-margin-top: 80px;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-truck"></i> Service Divisions</span>
+          <h2>Three divisions, <span class="gradient-text">twelve capabilities</span></h2>
+          <p>Every call is routed to the specialized vehicle and certified operator matched to your exact situation.</p>
+        </div>
+
+        <!-- Capability rail -->
+        <div class="week-rail animate-on-scroll" aria-hidden="true">
+          <span class="wk p1">1</span><span class="wk p1">2</span><span class="wk p1">3</span><span
+            class="wk p1 ms">4</span>
+          <span class="wk p2">5</span><span class="wk p2">6</span><span class="wk p2">7</span><span
+            class="wk p2 ms">8</span>
+          <span class="wk p3">9</span><span class="wk p3">10</span><span class="wk p3">11</span><span
+            class="wk p3 ms">12</span>
+        </div>
+
+        <div class="journey">
+          <!-- Division 1 -->
+          <article class="journey-phase animate-on-scroll">
+            <div class="journey-marker"><span>01</span></div>
+            <div class="journey-card">
+              <div class="journey-head">
+                <div>
+                  <span class="journey-weeks"><i class="ph ph-truck"></i> Division 1 &bull; Towing</span>
+                  <h3>Flatbed &amp; Zero-Clearance Towing</h3>
+                  <p>Hydraulic roll-back flatbeds with nylon soft-strap wheel tie-downs for AWD, luxury, and electric vehicles.</p>
+                </div>
+                <img src="assets/images/service-flatbed.jpg" alt="TowGuard flatbed loading a passenger vehicle">
+              </div>
+              <ol class="journey-weeks-list">
+                <li><b>01 Flatbed</b> Full 4-wheel-off-ground hydraulic tilt transport</li>
+                <li><b>02 EV Safe</b> Low-angle ramps &amp; skate dollies for locked motors</li>
+                <li><b>03 Long Haul</b> Interstate &amp; regional dealership transport up to 150 mi</li>
+                <li><b>04 Motorcycle</b> Dedicated front-wheel chock &amp; soft-sling haul</li>
+              </ol>
+              <div class="journey-milestone">
+                <i class="ph-fill ph-shield-check"></i>
+                <div><strong>Safety Standard: Zero-frame contact</strong><span>All vehicles are secured exclusively by
+                    wheel-net straps with timestamped 360-degree pre-load inspection photos.</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Division 2 -->
+          <article class="journey-phase animate-on-scroll">
+            <div class="journey-marker"><span>02</span></div>
+            <div class="journey-card">
+              <div class="journey-head">
+                <div>
+                  <span class="journey-weeks"><i class="ph ph-wrench"></i> Division 2 &bull; Roadside</span>
+                  <h3>On-Site Roadside Assistance</h3>
+                  <p>Fast mobile fixes performed safely at your curb, driveway, or highway shoulder so you avoid a tow altogether.</p>
+                </div>
+                <img src="assets/images/home2-hero-tow.jpg" alt="TowGuard roadside response truck on expressway">
+              </div>
+              <ol class="journey-weeks-list">
+                <li><b>05 Jumpstart</b> High-output AGM &amp; EV 12V auxiliary battery boost</li>
+                <li><b>06 Tire Swap</b> Spare mount, lug torque calibration &amp; air fill</li>
+                <li><b>07 Lockout</b> Scratch-free airbag wedge &amp; key retrieval</li>
+                <li><b>08 Fuel Drop</b> 3-gallon gasoline or diesel emergency delivery</li>
+              </ol>
+              <div class="journey-milestone">
+                <i class="ph-fill ph-lightning"></i>
+                <div><strong>Fast Turnaround: Back moving in 20 minutes</strong><span>Over 64% of roadside calls are
+                    resolved on the spot without needing a repair shop visit.</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Division 3 -->
+          <article class="journey-phase animate-on-scroll">
+            <div class="journey-marker"><span>03</span></div>
+            <div class="journey-card">
+              <div class="journey-head">
+                <div>
+                  <span class="journey-weeks"><i class="ph ph-compass"></i> Division 3 &bull; Recovery</span>
+                  <h3>Winch-Out &amp; Specialty Recovery</h3>
+                  <p>Heavy-duty dual-winch extraction, storm response, accident clearing, and tight parking structure retrievals.</p>
+                </div>
+                <img src="assets/images/hero-tow-bg.jpg" alt="Heavy recovery tow truck with amber lights at dusk">
+              </div>
+              <ol class="journey-weeks-list">
+                <li><b>09 Winch-Out</b> Mud, snowbank, sand &amp; roadside ditch extraction</li>
+                <li><b>10 Garage</b> Low-profile 6'2" clearance recovery units</li>
+                <li><b>11 Accident</b> Scene clearing, debris sweep &amp; insurance storage</li>
+                <li><b>12 Commercial</b> Medium-duty sprinters, box trucks &amp; fleet vans</li>
+              </ol>
+              <div class="journey-milestone">
+                <i class="ph-fill ph-flag-checkered"></i>
+                <div><strong>Certified Rigging: WreckMaster Level 4+</strong><span>Precision load calculations and
+                    traffic perimeter cones keep drivers and vehicles protected.</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 24/7 Shift Coverage -->
+    <section class="section band">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-clock"></i> Round-the-clock staging</span>
+          <h2>How we cover <span class="gradient-text">every hour</span></h2>
+          <p>Our fleet dynamically repositions across rush hour, freight corridors, and overnight highway patrols.</p>
+        </div>
+
+        <div class="week-rhythm animate-on-scroll delay-1">
+          <div class="rhythm-day">
+            <span class="rhythm-label">06:00&ndash;10:00</span>
+            <i class="ph-fill ph-traffic-cone"></i>
+            <h4>Morning Rush</h4>
+            <p>Expressway shoulder staging for dead batteries, flat tires, and commuter lane clears.</p>
+          </div>
+          <div class="rhythm-day">
+            <span class="rhythm-label">10:00&ndash;16:00</span>
+            <i class="ph-fill ph-truck"></i>
+            <h4>Commercial &amp; Dealership</h4>
+            <p>Priority fleet support for delivery vans, service bays, and scheduled vehicle transfers.</p>
+          </div>
+          <div class="rhythm-day">
+            <span class="rhythm-label">16:00&ndash;22:00</span>
+            <i class="ph-fill ph-navigation-arrow"></i>
+            <h4>Evening Commute</h4>
+            <p>High-visibility flatbed units stationed at major bridge approaches and tunnel ramps.</p>
+          </div>
+          <div class="rhythm-day">
+            <span class="rhythm-label">22:00&ndash;06:00</span>
+            <i class="ph-fill ph-shield-check"></i>
+            <h4>Overnight Patrol</h4>
+            <p>Dedicated night-shift operators ready for late lockouts, highway stalls, and storm rescues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialized Equipment Highlight -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-gear"></i> Specialized Rigs</span>
+          <h2>Precision <span class="gradient-text">Equipment</span></h2>
+          <p>Modern recovery hardware maintained weekly so your vehicle receives dealership-grade care.</p>
+        </div>
+
+        <div class="card-grid grid-3 animate-on-scroll delay-1">
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
+            <div class="phase-media">
+              <img src="assets/images/service-flatbed.jpg"
+                alt="Low-angle aluminum flatbed for electric and sports cars">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">EV &amp; Exotic</span>
+                <span
+                  style="background: rgba(11, 17, 32, 0.75); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+                  <i class="ph-fill ph-lightning" style="font-size: 18px; color: #fff;"></i>
+                </span>
+              </div>
+            </div>
+            <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Low-Angle EV Flatbeds</h3>
+            <p style="font-size: var(--size-caption); margin: 0;">5-degree approach ramps, polymer race extensions, and
+              8-point soft nylon wheel straps protect battery packs.</p>
+          </div>
+
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
+            <div class="phase-media">
+              <img src="assets/images/home2-hero-tow.jpg"
+                alt="Commercial medium-duty wheel-lift and flatbed unit">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">Commercial</span>
+                <span
+                  style="background: rgba(11, 17, 32, 0.75); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+                  <i class="ph-fill ph-truck" style="font-size: 18px; color: #fff;"></i>
+                </span>
+              </div>
+            </div>
+            <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Fleet &amp; Box Truck Units</h3>
+            <p style="font-size: var(--size-caption); margin: 0;">26,000-lb GVWR decks and heavy under-lifts built for
+              high-roof Sprinter vans, work trucks, and commercial trailers.</p>
+          </div>
+
+          <div class="card phase-card masterclass-card" style="text-align: left; align-items: flex-start;">
+            <div class="phase-media">
+              <img src="assets/images/hero-tow-bg.jpg"
+                alt="Low-clearance underground parking garage recovery unit">
+              <div
+                style="position: absolute; top: 12px; left: 12px; right: 12px; display: flex; align-items: center; justify-content: space-between; z-index: 2;">
+                <span class="chip media-chip">Tight Access</span>
+                <span
+                  style="background: rgba(11, 17, 32, 0.75); backdrop-filter: blur(8px); width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2);">
+                  <i class="ph-fill ph-buildings" style="font-size: 18px; color: #fff;"></i>
+                </span>
+              </div>
+            </div>
+            <h3 style="font-size: var(--size-h4); margin-bottom: 8px;">Low-Clearance Garage Rigs</h3>
+            <p style="font-size: var(--size-caption); margin: 0;">Compact 4x4 self-loading wheel-lifts engineered to
+              navigate tight B3 airport and downtown garage ramps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Guarantees -->
+    <section class="section band-plain">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-seal-check"></i> Service Guarantees</span>
+          <h2>What you get on <span class="gradient-text">every dispatch</span></h2>
+          <p>Clear pricing, real-time tracking, and full documentation from pickup to drop-off.</p>
+        </div>
+
+        <div class="outcome-grid animate-on-scroll delay-1">
+          <div class="outcome-item">
+            <span class="outcome-num">$0</span>
+            <h4>Hidden hook-up fees</h4>
+            <p>Your upfront Dispatch quote includes hook-up, soft-strapping, and route tolls.</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-num">22 min</span>
+            <h4>Median arrival ETA</h4>
+            <p>GPS-staged patrols keep wait times low even during evening rush hour.</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-num">100%</span>
+            <h4>Nylon wheel-net rigging</h4>
+            <p>Zero metal chains touching alloy rims, suspension arms, or EV frames.</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-num">360&deg;</span>
+            <h4>Photo condition log</h4>
+            <p>Timestamped pickup and drop-off photos archived directly in your Dispatch Portal.</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-num">Direct</span>
+            <h4>Insurance reimbursement</h4>
+            <p>Instant itemized PDF receipts accepted by every major auto carrier.</p>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-num">Live</span>
+            <h4>GPS truck map</h4>
+            <p>Follow your operator's exact approach and share your ETA link with family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Request CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel animate-on-scroll">
+          <img class="cta-bg" src="assets/images/service-flatbed.jpg" alt="" aria-hidden="true">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> 24/7 Dispatch Desk</span>
+          <h2>Need roadside <span class="gradient-text">assistance now?</span></h2>
+          <p>Submit your location and vehicle issue in under a minute &mdash; we'll assign the nearest truck immediately.</p>
+          <div class="cta-actions">
+            <a href="request.html" class="btn btn-primary btn-lg">Request Rescue Now <i class="ph ph-arrow-right btn-arrow"></i></a>
+            <a href="coverage.html" class="btn btn-outline btn-lg">Check Coverage Zones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-truck"></i>TowGuard
+          </a>
+          <p>24/7 rapid-response towing, flatbed recovery, and roadside assistance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">All Services</a>
+            <a href="operators.html" class="footer-link">Operators</a>
+            <a href="request.html" class="footer-link">Request Rescue</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Coverage</h4>
+          <div class="footer-links">
+            <a href="coverage.html" class="footer-link">Coverage Map</a>
+            <a href="guides.html" class="footer-link">Safety Guides</a>
+            <a href="support.html" class="footer-link">24/7 Support</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TowGuard Roadside &amp; Recovery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

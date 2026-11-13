@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <title>TowGuard | Driver Safety Guides</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+  <!-- Drawer overlay & Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-truck"></i>TowGuard</div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link">Home 2</a>
+      <a href="coverage.html" class="drawer-link">Coverage</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="operators.html" class="drawer-link">Operators</a>
+      <a href="guides.html" class="drawer-link active">Guides</a>
+      <a href="support.html" class="drawer-link">Support</a>
+      <a href="dispatch.html" class="drawer-link">Dispatch</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-truck"></i>TowGuard
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="operators.html" class="nav-link">Operators</a>
+        <a href="guides.html" class="nav-link active">Guides</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="dispatch.html" class="nav-link">Dispatch</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero"
+      style="min-height: 44vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="hero-shapes"></div>
+      <div class="container">
+        <span class="eyebrow animate-on-scroll"><i class="ph-fill ph-notebook"></i> From Our Dispatch Desk</span>
+        <h1 class="animate-on-scroll">TowGuard <span class="gradient-text">Safety Guides</span></h1>
+        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto; max-width: 600px;">Practical roadside
+          emergency protocols, EV towing advice, and breakdown prevention tips from our senior operators.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-4);">
+          <!-- Card 1 -->
+          <div class="card post-card animate-on-scroll">
+            <div class="phase-media post-media">
+              <img src="assets/images/hero-tow-bg.jpg" alt="What to do immediately after a highway tire blowout">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">Highway Safety</span>
+              <a href="guide-single.html">
+                <h3>What to do immediately after a highway tire blowout</h3>
+              </a>
+              <p class="post-meta">By Sarah Jenkins &bull; Oct 12, 2026</p>
+              <p class="post-excerpt">Keep your hands steady, avoid slamming the brakes, and move safely to the right
+                shoulder before calling dispatch...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card post-card animate-on-scroll delay-1">
+            <div class="phase-media post-media">
+              <img src="assets/images/service-flatbed.jpg" alt="Why AWD and EVs require a flatbed tow truck">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">EV &amp; AWD Care</span>
+              <a href="guide-single.html">
+                <h3>Why AWD &amp; EVs require a flatbed tow truck</h3>
+              </a>
+              <p class="post-meta">By Marcus Chen &bull; Sep 28, 2026</p>
+              <p class="post-excerpt">Dragging permanent-magnet motors or center differentials on two wheels can cause
+                thousands in drivetrain damage...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card post-card animate-on-scroll delay-2">
+            <div class="phase-media post-media">
+              <img src="assets/images/home2-hero-tow.jpg" alt="Jump-starting a dead 12V battery safely in cold weather">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">Battery Rescue</span>
+              <a href="guide-single.html">
+                <h3>Jump-starting a 12V battery safely in cold weather</h3>
+              </a>
+              <p class="post-meta">By David Kim &bull; Sep 15, 2026</p>
+              <p class="post-excerpt">Modern hybrids and EVs rely on an auxiliary 12V battery to boot high-voltage
+                systems. Here is the safe boost sequence...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card post-card animate-on-scroll">
+            <div class="phase-media post-media">
+              <img src="assets/images/hero-tow-bg.jpg" alt="Staying visible on a dark interstate shoulder">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">Night Driving</span>
+              <a href="guide-single.html">
+                <h3>How to stay visible on a dark interstate shoulder</h3>
+              </a>
+              <p class="post-meta">By Thomas Wright &bull; Sep 04, 2026</p>
+              <p class="post-excerpt">Proper hazard triangle spacing, interior dome lighting, and why you should exit from
+                the passenger side away from traffic...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card post-card animate-on-scroll delay-1">
+            <div class="phase-media post-media">
+              <img src="assets/images/service-flatbed.jpg" alt="Underground garage breakdowns and clearance tips">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">Urban Recovery</span>
+              <a href="guide-single.html">
+                <h3>Underground garage breakdowns: clearance checks</h3>
+              </a>
+              <p class="post-meta">By Anita Patel &bull; Aug 22, 2026</p>
+              <p class="post-excerpt">What measurements to share with dispatch when your car won't start on level B3 of an
+                airport or office parking deck...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card post-card animate-on-scroll delay-2">
+            <div class="phase-media post-media">
+              <img src="assets/images/home2-hero-tow.jpg" alt="Documenting roadside incidents for fast insurance claims">
+            </div>
+            <div class="post-body">
+              <span class="post-tag">Claims &amp; Coverage</span>
+              <a href="guide-single.html">
+                <h3>Documenting a breakdown for instant claim approval</h3>
+              </a>
+              <p class="post-meta">By Elena Rodriguez &bull; Aug 10, 2026</p>
+              <p class="post-excerpt">The four photos and itemized tow details auto insurers ask for so you get 100%
+                reimbursed without paperwork delays...</p>
+              <a href="guide-single.html" class="post-link">
+                Read Guide <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Read More Guides Button -->
+        <div style="text-align: center; margin-top: var(--space-8);" class="animate-on-scroll delay-3">
+          <a href="guide-single.html" class="btn btn-outline"
+            style="padding: 14px 36px; font-size: var(--size-body); font-weight: 600; display: inline-flex; align-items: center; gap: 10px; border-radius: var(--radius-pill);">
+            Read Featured Guide <i class="ph ph-arrow-right" style="font-size: 18px;"></i>
+          </a>
+        </div>
+
+        <!-- Free Driver Checklists -->
+        <div style="margin-top: var(--space-12);" class="animate-on-scroll delay-3">
+          <div class="section-header">
+            <span class="eyebrow"><i class="ph-fill ph-toolbox"></i> Glovebox Toolkits</span>
+            <h2>Free Driver <span class="gradient-text">Checklists</span></h2>
+            <p>Printable emergency guides and recovery checklists prepared by TowGuard field commanders.</p>
+          </div>
+
+          <div class="card-grid grid-3">
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-first-aid"
+                style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">Trunk Emergency Kit List</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">DOT triangles, thermal blanket, jump pack
+                specs, and flashlight essentials for every season.</p>
+              <a href="request.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px; margin-top: auto;"><i
+                  class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download Checklist</a>
+            </div>
+
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-lightning"
+                style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">EV Tow-Mode Quick Card</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">Step-by-step transport mode instructions
+                for Tesla, Rivian, Hyundai, Ford, and Lucid models.</p>
+              <a href="request.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px; margin-top: auto;"><i
+                  class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download Card</a>
+            </div>
+
+            <div class="card" style="text-align: left; align-items: flex-start;">
+              <i class="ph-fill ph-file-text"
+                style="font-size: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+              <h4 style="margin-bottom: 6px;">Roadside Claim Playbook</h4>
+              <p style="font-size: var(--size-caption); margin-bottom: 16px;">Photo angles, police report tips, and
+                insurance reimbursement checklist after an incident.</p>
+              <a href="request.html" class="btn btn-outline" style="padding: 6px 14px; font-size: 14px; margin-top: auto;"><i
+                  class="ph-fill ph-download-simple" style="margin-right: 6px;"></i> Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-truck"></i>TowGuard
+          </a>
+          <p>24/7 rapid-response towing, flatbed recovery, and roadside assistance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">All Services</a>
+            <a href="operators.html" class="footer-link">Operators</a>
+            <a href="request.html" class="footer-link">Request Rescue</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Coverage</h4>
+          <div class="footer-links">
+            <a href="coverage.html" class="footer-link">Coverage Map</a>
+            <a href="guides.html" class="footer-link">Safety Guides</a>
+            <a href="support.html" class="footer-link">24/7 Support</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TowGuard Roadside &amp; Recovery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

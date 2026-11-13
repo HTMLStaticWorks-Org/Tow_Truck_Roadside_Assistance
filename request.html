@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <title>TowGuard | Request 24/7 Roadside Rescue</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;520;540;580&family=Plus+Jakarta+Sans:wght@400;450;500&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+  <!-- Drawer overlay & Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-truck"></i>TowGuard</div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link">Home 2</a>
+      <a href="coverage.html" class="drawer-link">Coverage</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="operators.html" class="drawer-link">Operators</a>
+      <a href="guides.html" class="drawer-link">Guides</a>
+      <a href="support.html" class="drawer-link">Support</a>
+      <a href="dispatch.html" class="drawer-link">Dispatch</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-truck"></i>TowGuard
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="operators.html" class="nav-link">Operators</a>
+        <a href="guides.html" class="nav-link">Guides</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="dispatch.html" class="nav-link">Dispatch</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero"
+      style="min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <div class="hero-shapes"></div>
+      <div class="container">
+        <span class="eyebrow animate-on-scroll"><i class="ph-fill ph-paper-plane-tilt"></i> 24/7 Priority Dispatch</span>
+        <h1 class="animate-on-scroll">Request <span class="gradient-text">Roadside Rescue</span></h1>
+        <p class="hero-lead animate-on-scroll delay-1" style="margin: 0 auto var(--space-4); max-width: 620px;">Four
+          quick steps, under 60 seconds to submit, and an instant GPS-tracked unit confirmation.</p>
+        <div class="hero-actions animate-on-scroll delay-2" style="justify-content: center;">
+          <a href="#apply-form" class="btn btn-primary btn-lg">Submit dispatch request <i
+              class="ph ph-arrow-down btn-arrow"></i></a>
+          <a href="#eligibility" class="btn btn-outline btn-lg">Safety checklist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dispatch process -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-list-numbers"></i> Dispatch Flow</span>
+          <h2>How rapid <span class="gradient-text">dispatch works</span></h2>
+          <p>Immediate triage and live GPS tracking from the moment you hit submit.</p>
+        </div>
+        <div class="process-steps animate-on-scroll delay-1">
+          <div class="process-step">
+            <h4>Pin location</h4>
+            <p>Share your highway milepost, street address, or parking deck level below.</p>
+            <span class="process-time">~30 seconds</span>
+          </div>
+          <div class="process-step">
+            <h4>Equipment match</h4>
+            <p>Our hub assigns the right flatbed, battery van, or low-clearance rig.</p>
+            <span class="process-time">Under 2 mins</span>
+          </div>
+          <div class="process-step">
+            <h4>Track live ETA</h4>
+            <p>Follow your operator's truck moving toward you on the Dispatch Portal.</p>
+            <span class="process-time">~22 min avg</span>
+          </div>
+          <div class="process-step">
+            <h4>Safe recovery</h4>
+            <p>360&deg; condition photos, on-site fix or flatbed haul, and digital receipt.</p>
+            <span class="process-time">Verified drop</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety & Preparation -->
+    <section class="section band" id="eligibility" style="scroll-margin-top: 80px;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-shield-check"></i> Driver Safety</span>
+          <h2>While you wait &amp; <span class="gradient-text">what helps dispatch</span></h2>
+        </div>
+        <div class="check-cols animate-on-scroll delay-1">
+          <div class="check-box">
+            <h3><i class="ph-fill ph-warning" style="color: var(--color-accent);"></i> Roadside Safety First</h3>
+            <ul>
+              <li><i class="ph-fill ph-check-circle"></i> Turn on hazard flashers and pull as far right as possible</li>
+              <li><i class="ph-fill ph-check-circle"></i> Stay buckled inside the vehicle if on a high-speed highway</li>
+              <li><i class="ph-fill ph-check-circle"></i> Exit only from the passenger side away from traffic lanes</li>
+              <li><i class="ph-fill ph-check-circle"></i> Keep your phone ringer on for operator arrival calls</li>
+            </ul>
+          </div>
+          <div class="check-box">
+            <h3><i class="ph-fill ph-folder-open" style="color: var(--color-accent);"></i> Helpful Info to Include</h3>
+            <ul>
+              <li><i class="ph-fill ph-map-pin"></i> Exact highway direction, exit number, or cross street</li>
+              <li><i class="ph-fill ph-car"></i> Vehicle make, drivetrain (AWD/EV), and tire condition</li>
+              <li><i class="ph-fill ph-buildings"></i> Parking garage height clearance or gate code if applicable</li>
+              <li><i class="ph-fill ph-navigation-arrow"></i> Preferred destination repair shop or home address</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Response Times -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-clock"></i> Target Response Times</span>
+          <h2>Estimated <span class="gradient-text">dispatch windows</span></h2>
+        </div>
+        <div class="dates-table animate-on-scroll delay-1">
+          <div class="dates-row is-key"><time>15&ndash;20 min</time><span>Highway Battery Jumpstart &amp; Lockout</span><span
+              class="chip">Priority</span></div>
+          <div class="dates-row is-key"><time>18&ndash;25 min</time><span>Metro &amp; Expressway Flatbed Towing</span><span
+              class="chip">24/7 Live</span></div>
+          <div class="dates-row"><time>20&ndash;25 min</time><span>On-Site Spare Tire Swap &amp; Air Fill</span><span
+              class="chip">Mobile Van</span></div>
+          <div class="dates-row"><time>22&ndash;28 min</time><span>Underground Garage Low-Clearance Unit</span><span
+              class="chip">Compact Rig</span></div>
+          <div class="dates-row"><time>25&ndash;35 min</time><span>Off-Shoulder Winch &amp; Ditch Extraction</span><span
+              class="chip">Heavy Winch</span></div>
+          <div class="dates-row"><time>Scheduled</time><span>Long-Distance Intercity Flatbed Haul (150 mi)</span><span
+              class="chip">Direct</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dispatch Request Form -->
+    <section id="apply-form" class="section band-plain" style="scroll-margin-top: 80px;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-paper-plane-tilt"></i> Live Dispatch Form</span>
+          <h2>Tell us where <span class="gradient-text">you are</span></h2>
+          <p>Submit your vehicle and location details to assign the closest TowGuard unit.</p>
+        </div>
+
+        <div class="card animate-on-scroll delay-1"
+          style="max-width: 800px; margin: 0 auto; text-align: left; align-items: stretch;">
+          <form data-validate="true" action="#">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Driver Name</label>
+                <input type="text" class="form-control" name="driver_name" required placeholder="Jane Doe">
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email (for Live ETA &amp; Receipt)</label>
+                <input type="email" class="form-control" name="email" required placeholder="jane@driver.com">
+                <div class="error-message"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Vehicle Year, Make &amp; Model</label>
+                <input type="text" class="form-control" name="vehicle_model" required placeholder="e.g. 2024 Subaru Outback AWD">
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Contact Phone Number</label>
+                <input type="tel" class="form-control" name="phone" required placeholder="(415) 555-0148">
+                <div class="error-message"></div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Service Needed</label>
+                <select class="form-control" name="service_type" required>
+                  <option value="">Select Service...</option>
+                  <option value="Flatbed">Flatbed Towing</option>
+                  <option value="Battery">Battery Jumpstart / EV 12V</option>
+                  <option value="Tire">Flat Tire / Spare Mount</option>
+                  <option value="Lockout">Vehicle Lockout</option>
+                  <option value="Fuel">Emergency Fuel Delivery</option>
+                  <option value="Winch">Winch-Out / Ditch Recovery</option>
+                </select>
+                <div class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Clearance &amp; Drivetrain</label>
+                <select class="form-control" name="drivetrain" required>
+                  <option value="">Select Type...</option>
+                  <option value="AWD_EV">AWD / Electric Vehicle (Flatbed)</option>
+                  <option value="FWD_RWD">Standard FWD / RWD Sedan or SUV</option>
+                  <option value="Garage">Underground Garage (&lt; 6'8" clearance)</option>
+                  <option value="Commercial">Commercial Van / Heavy Pickup</option>
+                </select>
+                <div class="error-message"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Exact Pickup Location / Highway Milepost</label>
+              <input type="text" class="form-control" name="pickup_location" required
+                placeholder="e.g. I-280 Northbound near Exit 42, right shoulder">
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Drop-Off Destination (if towing)</label>
+              <input type="text" class="form-control" name="dropoff_location" required
+                placeholder="e.g. Bayshore Auto Service, 1200 Industrial Way (or N/A for roadside fix)">
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Situation Notes</label>
+              <textarea class="form-control" name="notes" rows="4" required
+                placeholder="Describe any flat tires, warning lights, locked wheels, or gate access codes"></textarea>
+              <div class="error-message"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+              style="padding: 16px 32px; font-size: 18px; margin-top: var(--space-4);">Dispatch Nearest Unit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-truck"></i>TowGuard
+          </a>
+          <p>24/7 rapid-response towing, flatbed recovery, and roadside assistance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">All Services</a>
+            <a href="operators.html" class="footer-link">Operators</a>
+            <a href="request.html" class="footer-link">Request Rescue</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Coverage</h4>
+          <div class="footer-links">
+            <a href="coverage.html" class="footer-link">Coverage Map</a>
+            <a href="guides.html" class="footer-link">Safety Guides</a>
+            <a href="support.html" class="footer-link">24/7 Support</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TowGuard Roadside &amp; Recovery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+

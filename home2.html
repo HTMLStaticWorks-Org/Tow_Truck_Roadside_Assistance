@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TowGuard | 24/7 Tow Truck &amp; Roadside Assistance - Home 2</title>
+  <meta name="description"
+    content="Turn a highway breakdown into a calm, tracked recovery with live GPS dispatch, flatbed towing, and 22-minute arrival times.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;450;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <style>
+    /* Home 2 specific styles */
+    .hero-center {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: calc(var(--nav-height) + clamp(3rem, 7vw, 6rem)) 0 clamp(3.5rem, 6vw, 6rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-center .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-center h1 {
+      max-width: 940px;
+      margin: 0 auto var(--space-3);
+    }
+
+    .hero-center .hero-lead {
+      max-width: 660px;
+      margin: 0 auto var(--space-4);
+    }
+
+    .hero-center .hero-actions {
+      justify-content: center;
+    }
+
+    .hero-center .hero-trust {
+      justify-content: center;
+      border-top: none;
+    }
+
+    /* Rotating headline word */
+    .rotator {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+    }
+
+    .rotator-word {
+      display: inline-block;
+      animation: rotatorIn 0.5s var(--ease-out);
+    }
+
+    @keyframes rotatorIn {
+      from {
+        opacity: 0;
+        transform: translateY(0.35em) rotateX(-40deg);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+    }
+
+    .rotator-caret {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      margin-left: 2px;
+      vertical-align: -0.08em;
+      background: var(--color-accent);
+      animation: caretBlink 1s step-end infinite;
+    }
+
+    @keyframes caretBlink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .rotator-caret {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand"><i class="ph-fill ph-truck"></i>TowGuard</div>
+      <button class="drawer-close" aria-label="Close"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="home2.html" class="drawer-link active">Home 2</a>
+      <a href="coverage.html" class="drawer-link">Coverage</a>
+      <a href="services.html" class="drawer-link">Services</a>
+      <a href="operators.html" class="drawer-link">Operators</a>
+      <a href="guides.html" class="drawer-link">Guides</a>
+      <a href="support.html" class="drawer-link">Support</a>
+      <a href="dispatch.html" class="drawer-link">Dispatch</a>
+    </nav>
+    <div class="drawer-footer">
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+      <button class="rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <a href="login.html" class="drawer-link drawer-link-primary">Login</a>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="ph-fill ph-truck"></i>TowGuard
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link active">Home 2</a>
+        <a href="coverage.html" class="nav-link">Coverage</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="operators.html" class="nav-link">Operators</a>
+        <a href="guides.html" class="nav-link">Guides</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="dispatch.html" class="nav-link">Dispatch</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="ph ph-moon"></i></button>
+        <button class="rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL"><i
+            class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        <button class="nav-toggle" aria-label="Open menu"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Split: copy left, live dispatch visual right -->
+    <section class="hero hero-split">
+      <div class="hero-split-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-split-inner">
+        <div class="hero-split-copy">
+          <span class="hero-subtitle animate-on-scroll"><span class="eyebrow-dot"></span> 24/7 GPS Roadside
+            Network</span>
+          <h1 class="animate-on-scroll delay-1">
+            Back on the road.<br>
+            <span class="gradient-text rotator" id="heroRotator" aria-label="Faster than ever."></span><span
+              class="rotator-caret" aria-hidden="true"></span>
+          </h1>
+          <p class="hero-lead animate-on-scroll delay-2">Turn an unexpected breakdown into a calm, tracked recovery with
+            certified flatbed operators, live map telemetry, and locked upfront pricing.</p>
+          <ul class="hero-split-points animate-on-scroll delay-2">
+            <li><i class="ph-fill ph-check-circle"></i> Average 22-minute arrival across all metro highway corridors</li>
+            <li><i class="ph-fill ph-check-circle"></i> Damage-free AWD &amp; EV flatbed loading with nylon soft straps</li>
+            <li><i class="ph-fill ph-check-circle"></i> Live truck ETA map &amp; instant insurance-ready digital receipts</li>
+          </ul>
+          <div class="hero-actions animate-on-scroll delay-3">
+            <a href="request.html" class="btn btn-primary btn-lg">Dispatch a Truck Now <i
+                class="ph ph-arrow-right btn-arrow"></i></a>
+            <a href="#roadmap" class="btn btn-outline btn-lg"><i class="ph ph-map-trifold"></i> Track the 12 steps</a>
+          </div>
+        </div>
+
+        <div class="hero-split-visual animate-on-scroll delay-2">
+          <div class="hero-split-photo">
+            <img src="assets/images/home2-hero-tow.jpg" alt="TowGuard heavy flatbed truck arriving on expressway at dusk">
+          </div>
+
+          <div class="hero-float hero-float-progress">
+            <div class="hero-float-head">
+              <span><i class="ph-fill ph-truck"></i> Unit #TG-408</span>
+              <strong>ETA 11 mins</strong>
+            </div>
+            <div class="hero-float-bar"><span style="width: 68%"></span></div>
+            <ul class="hero-float-steps">
+              <li class="done">Assigned</li>
+              <li class="now">En Route</li>
+              <li>Drop-Off</li>
+            </ul>
+          </div>
+
+          <div class="hero-float hero-float-stat">
+            <span class="hero-float-ico"><i class="ph-fill ph-shield-check"></i></span>
+            <div>
+              <strong>99.4%</strong>
+              <span>damage-free recovery score</span>
+            </div>
+          </div>
+
+          <div class="hero-float hero-float-mentor">
+            <img src="assets/images/home2-hero-mentor.jpg" alt="">
+            <div>
+              <strong>Operator dispatched</strong>
+              <span>Marcus C. &middot; Master Flatbed Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Partner ticker rail -->
+    <section class="ticker-band">
+      <div class="container ticker-rail">
+        <span class="ticker-label">Trusted by</span>
+        <div class="ticker">
+          <div class="ticker-track">
+            <span class="ticker-item">Crestline Auto Insurance</span>
+            <span class="ticker-item">MetroFleet Logistics</span>
+            <span class="ticker-item">Horizon EV Care</span>
+            <span class="ticker-item">Apex Warranty Group</span>
+            <span class="ticker-item">Pacific Highway Patrol</span>
+            <span class="ticker-item">Bayshore Auto Dealers</span>
+            <!-- duplicated for a seamless loop -->
+            <span class="ticker-item" aria-hidden="true">Crestline Auto Insurance</span>
+            <span class="ticker-item" aria-hidden="true">MetroFleet Logistics</span>
+            <span class="ticker-item" aria-hidden="true">Horizon EV Care</span>
+            <span class="ticker-item" aria-hidden="true">Apex Warranty Group</span>
+            <span class="ticker-item" aria-hidden="true">Pacific Highway Patrol</span>
+            <span class="ticker-item" aria-hidden="true">Bayshore Auto Dealers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Impact Stats (dark strip) -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-chart-line-up"></i> Dispatch Metrics</span>
+          <h2>Speed you can <span class="gradient-text">count on</span></h2>
+          <p>Seven years, 140+ dedicated recovery vehicles, and round-the-clock telemetry across every highway mile.</p>
+        </div>
+
+        <div class="stats-dark animate-on-scroll delay-1">
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="48" data-suffix="K+">0</p>
+            <p class="stat-label">Vehicles rescued<span class="stat-note">Since 2018</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="22" data-suffix=" min">0</p>
+            <p class="stat-label">Median arrival time<span class="stat-note">Metro corridors</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="99.4" data-suffix="%">0</p>
+            <p class="stat-label">Safe-load rating<span class="stat-note">Verified inspections</span></p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-value stat-counter" data-target="365" data-suffix="d">0</p>
+            <p class="stat-label">24/7 readiness<span class="stat-note">Holidays &amp; storms</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Fleet Readiness Split -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="animate-on-scroll">
+            <div class="img-frame">
+              <img src="assets/images/service-flatbed.jpg" alt="TowGuard technician securing a vehicle on a flatbed truck">
+            </div>
+          </div>
+          <div class="split-copy animate-on-scroll delay-1">
+            <span class="eyebrow"><i class="ph-fill ph-handshake"></i> Reliability</span>
+            <h2>Not just a tow truck. <span class="gradient-text">Complete care.</span></h2>
+            <p style="font-size: var(--size-lead); font-weight: var(--weight-lead);">Our live GPS staging puts certified
+              operators along peak commuter corridors before breakdowns happen.</p>
+            <ul class="feature-list">
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>Zero-contact soft-strap rigging</strong> that
+                  protects EV battery trays and alloy rims</span></li>
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>Live customer dispatch portal</strong> to share
+                  your truck's real-time ETA with family</span></li>
+              <li><i class="ph-fill ph-check-circle"></i><span><strong>Direct insurance billing</strong> with
+                  timestamped pre- and post-tow photo logs</span></li>
+            </ul>
+            <a href="services.html" class="btn btn-outline">Explore roadside services <i
+                class="ph ph-arrow-right btn-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. INTERACTIVE: 12-step dispatch protocol explorer -->
+    <section class="section band" id="roadmap">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Interactive</span>
+          <h2>Walk the <span class="gradient-text">12-step rescue</span></h2>
+          <p>Select any step &mdash; or hit auto-play &mdash; to see exactly how TowGuard takes you from roadside SOS
+            to safe delivery.</p>
+        </div>
+
+        <div class="roadmap animate-on-scroll delay-1">
+          <div class="roadmap-phases" role="group" aria-label="Jump to a phase">
+            <button type="button" class="roadmap-phase is-active" data-phase="Dispatch">Phase 1 &middot; Dispatch</button>
+            <button type="button" class="roadmap-phase" data-phase="On-Scene">Phase 2 &middot; On-Scene</button>
+            <button type="button" class="roadmap-phase" data-phase="Drop-Off">Phase 3 &middot; Drop-Off</button>
+          </div>
+
+          <div class="roadmap-rail" id="rmRail" role="tablist" aria-label="Rescue steps">
+            <!-- step nodes are generated by main.js -->
+          </div>
+
+          <div class="roadmap-body">
+            <div class="roadmap-detail" id="rmDetail" role="tabpanel" aria-live="polite">
+              <span class="chip" id="rmPhase">Phase 1 - Dispatch</span>
+              <h3 id="rmTitle">&nbsp;</h3>
+              <p id="rmDesc">&nbsp;</p>
+              <ul class="roadmap-list" id="rmList"></ul>
+            </div>
+
+            <aside class="roadmap-side">
+              <div class="roadmap-week">
+                <span>Step</span>
+                <strong class="num" id="rmWeek">01</strong>
+              </div>
+              <dl>
+                <div class="roadmap-meta">
+                  <dt>Milestone</dt>
+                  <dd id="rmMilestone">&nbsp;</dd>
+                </div>
+                <div class="roadmap-meta">
+                  <dt>Assigned unit</dt>
+                  <dd id="rmMentor">&nbsp;</dd>
+                </div>
+                <div class="roadmap-meta">
+                  <dt>What you get</dt>
+                  <dd id="rmOutput">&nbsp;</dd>
+                </div>
+              </dl>
+              <div class="roadmap-controls">
+                <button type="button" class="roadmap-step" id="rmPrev" aria-label="Previous step"><i
+                    class="ph ph-caret-left"></i></button>
+                <button type="button" class="roadmap-step" id="rmNext" aria-label="Next step"><i
+                    class="ph ph-caret-right"></i></button>
+                <button type="button" class="roadmap-play" id="rmPlay"><i class="ph-fill ph-play"></i>
+                  Auto-play</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Proven Outcomes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-trophy"></i> Field Proof</span>
+          <h2>Proven <span class="gradient-text">Recoveries</span></h2>
+          <p>Three real dispatches across commuter highways, downtown garages, and commercial routes.</p>
+        </div>
+        <div class="card-grid grid-3 animate-on-scroll delay-1">
+          <div class="card phase-card">
+            <h3>I-280 EV Recovery</h3>
+            <span class="chip">17 min arrival</span>
+            <p style="margin-top: var(--space-2);">"They brought wheel skates and a low-angle deck without me even
+              having to explain EV transport mode."</p>
+            <div class="phase-meta person">
+              <img src="assets/images/testimonial-sophia-chen.jpg" alt="Priya Raman">
+              <div>
+                <strong>Priya Raman</strong>
+                <span>Shield Plan Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="card phase-card">
+            <h3>Bay Courier Fleet</h3>
+            <span class="chip">35 vehicles covered</span>
+            <p style="margin-top: var(--space-2);">"Instant dispatch dashboard keeps our route managers updated without
+              chasing down third-party hotlines."</p>
+            <div class="phase-meta person">
+              <img src="assets/images/testimonial-david-vance.jpg" alt="Tom Ashby">
+              <div>
+                <strong>Tom Ashby</strong>
+                <span>Fleet Lead, Bay Courier</span>
+              </div>
+            </div>
+          </div>
+          <div class="card phase-card">
+            <h3>Downtown Garage</h3>
+            <span class="chip">Zero-damage extract</span>
+            <p style="margin-top: var(--space-2);">"Our SUV died on B3 with a 6'4 ceiling. Their compact recovery rig
+              handled it in under 25 minutes."</p>
+            <div class="phase-meta person">
+              <img src="assets/images/testimonial-elena-rostova.jpg" alt="Nina Okafor">
+              <div>
+                <strong>Nina Okafor</strong>
+                <span>Verified Driver</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Membership Perks -->
+    <section class="section band-plain">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="eyebrow"><i class="ph-fill ph-gift"></i> Membership</span>
+          <h2>Built-In <span class="gradient-text">Shield Benefits</span></h2>
+          <p>Every TowGuard membership unlocks priority routing, zero dispatch fees, and multi-vehicle roadside protection.</p>
+        </div>
+
+        <div class="card-grid perk-grid animate-on-scroll delay-1">
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-truck"></i>
+              <h4>Complimentary Tows</h4>
+            </div>
+            <p class="perk-value">Up to 100 mi / call</p>
+            <p>Four covered flatbed tows per year with zero hook-up surcharges or peak-hour pricing.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-battery-charging"></i>
+              <h4>Battery &amp; EV Boost</h4>
+            </div>
+            <p class="perk-value">Unlimited jumps</p>
+            <p>24/7 commercial AGM &amp; EV 12V battery diagnostics, jumpstarts, and mobile replacement.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-key"></i>
+              <h4>Lockout &amp; Fuel</h4>
+            </div>
+            <p class="perk-value">$0 service fee</p>
+            <p>Non-destructive vehicle entry and up to 3 gallons of emergency fuel delivered curbside.</p>
+          </div>
+
+          <div class="card perk-card">
+            <div class="perk-head">
+              <i class="ph-fill ph-shield-check"></i>
+              <h4>Family &amp; Fleet</h4>
+            </div>
+            <p class="perk-value">Cover 4 drivers</p>
+            <p>Protect every household driver or commercial van under one unified Dispatch Portal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-panel animate-on-scroll">
+          <img class="cta-bg" src="assets/images/home2-hero-tow.jpg" alt="" aria-hidden="true">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> 24/7 Priority Dispatch</span>
+          <h2>Ready for <span class="gradient-text">immediate help?</span></h2>
+          <p>Request emergency assistance online in under 60 seconds, or log in to track your assigned unit live.</p>
+          <div class="cta-actions">
+            <a href="request.html" class="btn btn-primary btn-lg">Request rescue now <i
+                class="ph ph-arrow-right btn-arrow"></i></a>
+            <a href="coverage.html" class="btn btn-outline btn-lg">Check coverage zones</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer matches index -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="nav-brand" style="margin-bottom: var(--space-3); display: inline-flex;">
+            <i class="ph-fill ph-truck"></i>TowGuard
+          </a>
+          <p>24/7 rapid-response towing, flatbed recovery, and roadside assistance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">All Services</a>
+            <a href="operators.html" class="footer-link">Operators</a>
+            <a href="request.html" class="footer-link">Request Rescue</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Coverage</h4>
+          <div class="footer-links">
+            <a href="coverage.html" class="footer-link">Coverage Map</a>
+            <a href="guides.html" class="footer-link">Safety Guides</a>
+            <a href="support.html" class="footer-link">24/7 Support</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TowGuard Roadside &amp; Recovery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    /* Rotating hero word - home 2 only */
+    (function () {
+      const el = document.getElementById('heroRotator');
+      if (!el) return;
+
+      const words = ['Faster than ever.', 'Safe on every mile.', 'Tracked in real time.'];
+      let i = 0;
+
+      function paint() {
+        el.innerHTML = '<span class="rotator-word">' + words[i] + '</span>';
+        el.setAttribute('aria-label', words[i]);
+      }
+
+      paint();
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      setInterval(() => {
+        i = (i + 1) % words.length;
+        paint();
+      }, 3600);
+    })();
+  </script>
+</body>
+
+</html>
