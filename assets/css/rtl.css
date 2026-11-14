@@ -85,11 +85,6 @@ html[dir="rtl"] .form-group {
   text-align: right;
 }
 
-/* Scroll progress fills from the right */
-html[dir="rtl"] .scroll-progress {
-  transform-origin: 100% 50%;
-}
-
 @media (max-width: 768px) {
   html[dir="rtl"] .to-top { left: 16px; right: auto; }
 }

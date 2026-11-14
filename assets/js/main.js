@@ -113,13 +113,9 @@ function initNavbar() {
   });
 }
 
-/* --- SCROLL UI: condensed navbar, progress bar, back-to-top --- */
+/* --- SCROLL UI: condensed navbar & back-to-top --- */
 function initScrollUI() {
   const navbar = document.querySelector('.navbar');
-
-  const progress = document.createElement('div');
-  progress.className = 'scroll-progress';
-  document.body.appendChild(progress);
 
   const toTop = document.createElement('button');
   toTop.className = 'to-top';
@@ -132,10 +128,7 @@ function initScrollUI() {
 
   function update() {
     const y = window.scrollY;
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    const ratio = max > 0 ? Math.min(y / max, 1) : 0;
 
-    progress.style.transform = `scaleX(${ratio})`;
     if (navbar) navbar.classList.toggle('scrolled', y > 24);
     toTop.classList.toggle('show', y > 600);
 
